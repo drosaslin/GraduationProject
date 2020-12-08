@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "275097177285",
+    "firebase_url": "https://travel-northern-taiwan.firebaseio.com",
+    "project_id": "travel-northern-taiwan",
+    "storage_bucket": "travel-northern-taiwan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275097177285:android:ce513c5403b4c5b9",
+        "android_client_info": {
+          "package_name": "com.example.android.travelnortherntaiwan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275097177285-54ag5c7g10843jm87r88inujufjb1c8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.travelnortherntaiwan",
+            "certificate_hash": "758c33663a9f936a16f1718497eff596111d7d44"
+          }
+        },
+        {
+          "client_id": "275097177285-bpof35lee5v6pt47866tjs1iv4sbiiu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5mLx2gVBgXTQTZ86rJgep5LVBkGAw8Pk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275097177285-bpof35lee5v6pt47866tjs1iv4sbiiu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

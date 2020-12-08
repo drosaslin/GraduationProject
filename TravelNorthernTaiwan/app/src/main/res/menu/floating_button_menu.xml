@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_tasks"
+        android:icon="@drawable/ic_check"
+        android:title="To-do list" />
+    <item
+        android:id="@+id/action_weather"
+        android:icon="@drawable/drawer_weather"
+        android:title="Weather"/>
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_map"
+        android:title="Map"/>
+</menu>

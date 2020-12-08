@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+   >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:drawable="@color/colorPrimaryDark"
+            android:id="@+id/nav_trips"
+            android:icon="@drawable/drawer_trips"
+            android:title="@string/my_trips" />
+
+        <item
+            android:drawable="@color/colorPrimaryDark"
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/drawer_weather"
+            android:title="@string/weather" />
+
+        <item
+            android:drawable="@color/colorPrimaryDark"
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/drawer_about"
+            android:title="@string/about_us" />
+    </group>
+
+    <item android:title="">
+
+        <menu>
+            <item
+                android:drawable="@color/colorPrimaryDark"
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/drawer_exit"
+                android:title="@string/sign_out"/>
+        </menu>
+
+    </item>
+
+</menu>

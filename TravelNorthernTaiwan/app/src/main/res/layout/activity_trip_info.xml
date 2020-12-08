@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/regionField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:text="Region: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tripName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Trip Name"
+            android:inputType="none"
+            android:focusable="false"
+            android:longClickable="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/start_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:hint="Date"
+                android:inputType="none"
+                android:longClickable="false" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_gravity="center_vertical"
+                android:textSize="23sp"/>
+
+            <Button
+                android:id="@+id/manageBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage budget"
+                android:layout_marginLeft="8sp"
+                android:gravity="center_vertical"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundColor"
+                android:orientation="vertical">
+
+                <com.transferwise.sequencelayout.SequenceLayout
+                    android:id="@+id/sequence_layout"
+                    android:layout_marginTop="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.transferwise.sequencelayout.SequenceLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:id="@+id/selection_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:fabGravity="bottom_end"
+            app:fabMenu="@menu/floating_button_menu"
+            app:miniFabBackgroundTint="@android:color/white"
+            app:miniFabDrawableTint="?attr/colorPrimaryDark"
+            app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/map_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true"-->
+            <!--app:fabSize="normal"-->
+            <!--app:srcCompat="@drawable/ic_map"-->
+            <!--android:layout_margin="6dp" />-->
+    </FrameLayout>
+
+</LinearLayout>
